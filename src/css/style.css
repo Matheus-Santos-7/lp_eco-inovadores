@@ -1,0 +1,550 @@
+/* Cabecacalho */
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    min-width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+    background-color: #525B2C;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo .imagem{
+    width: 30px;
+}
+
+.logo .nome{
+    margin-left: 14px;
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    color: #fff;
+    
+}
+
+.logo .nome:hover{
+    font-weight: 700;
+}
+
+/* Cabecacalho */
+
+/* Navegação */
+
+.cabecalho .navegacao .menu{
+    display: flex;
+    gap: 6px;
+}
+
+.cabecalho .navegacao .btn-mobile{
+    display: none;
+}
+
+.cabecalho .navegacao .menu .item{
+    margin: 10px;
+}
+
+.cabecalho .navegacao .menu .item a{
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+    font-weight: 500;
+    color: #fff;
+    font-size: 15px;
+}
+
+.cabecalho .navegacao .menu .item a:hover{
+    color: #A2B14D;
+    border-bottom: 2px solid #A2B14D;
+    padding-bottom: -3px;
+}
+
+/* Navegação */
+
+/* Paineis */
+
+.conteudo-principal .paineis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    position: relative;
+}
+
+
+.conteudo-principal .paineis .imagem-painel{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.conteudo-principal .paineis  .imagem-painel.mostrar{
+    opacity: 1;
+    
+}
+
+.conteudo-principal .paineis .projeto1{
+    background-image: url("../img/Lixo.jpeg");
+} 
+
+.conteudo-principal .paineis .projeto2{
+    background-image: url("../img/circuito-novo.png");
+    max-width: 1322px;
+}
+
+ .conteudo-principal .paineis .projeto3{
+    background-image: url("../img/lixeiras700.png");
+}
+ 
+.conteudo-principal .paineis .titulo{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 32px;
+    transition: 0.4s ease-in-out;
+}
+
+.conteudo-principal .paineis .titulo:hover{
+    border: 2px solid rgba(255,255,255, 0.5);
+    padding: 28px;                  
+}
+
+.conteudo-principal .paineis .seta{
+    background-image: url("../img/seta.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+}
+
+.conteudo-principal .paineis .seta.btn-voltar{
+    left: 20px;
+    transform: rotate(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar{
+    right:20px;
+} 
+
+/* Paineis */
+
+/*Eco Inovadores */
+
+.eco-inovadores{
+    background-color: #525B2C;
+}
+
+.eco-inovadores .conteudo-eco{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding: 200px;
+    justify-content: space-between;
+}
+
+.eco-inovadores .conteudo-eco .informacoes{
+    width: 50%;
+}
+
+
+.eco-inovadores .conteudo-eco .informacoes .titulo{
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.eco-inovadores .conteudo-eco .informacoes .texto{
+    font-size: 20px;
+    line-height: 1.4;
+    color: #fff;
+    font-weight: 400;
+}
+
+.eco-inovadores .conteudo-eco .globo{
+    width: 50%;
+}
+
+/*Eco Inovadores */
+
+/* Quem Somos */
+
+.quem-somos{
+    background-color: #A2B14D;
+}
+
+.quem-somos .conteudo{
+    display: flex;
+    align-items: center;
+    gap: 20%;
+    padding: 200px;
+}
+
+.quem-somos .conteudo .membros-equipe{
+    display: flex;
+    text-align: center;
+    gap: 30px;
+}
+
+.quem-somos .conteudo .membro{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quem-somos .conteudo .membros-equipe .nome-membro{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.quem-somos .conteudo .membros-equipe .imagem-membro{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    transition: transform 0.5s;
+}
+
+.quem-somos .conteudo .membros-equipe .imagem-membro:hover{
+    transform: scale(1.1);
+}
+
+.quem-somos .conteudo .informacoes{
+    width: 40%;
+}
+
+.quem-somos .conteudo .informacoes .titulo{
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.quem-somos .conteudo .informacoes .texto{
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* Quem Somos */
+
+/* Lixeira */
+
+.lixeira{
+    background-color: #525B2C;
+}
+
+.lixeira .conteudo-lixeira{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    padding:200px ;
+    justify-content: space-between;
+}
+
+.lixeira .conteudo-lixeira .info-lixeira{
+    width: 55%;
+    font-size: 20px;
+}
+
+.lixeira .conteudo-lixeira .info-lixeira .titulo-lixeira{
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.lixeira .conteudo-lixeira .info-lixeira .texto-lixeira{
+    /* font-size: 80px; */
+    line-height: 1.4;
+    color: #fff;
+    font-weight: 400;
+}
+
+/* Lixeira */
+
+/* Feedbacks */
+
+.feedbacks{
+    background-color: #A2B14D;
+    padding: 150px 50px;
+}
+
+.feedbacks .cards-feedbacks{
+    display: flex;
+    gap: 100px;
+    margin: 0;
+    padding: 60px;
+    justify-content: space-between;
+}
+
+.feedbacks .cards-feedbacks .card-feedback{
+    width: 400px;
+    height: 500px;
+    background-color: #525B2C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: #525B2C;
+}
+
+.feedbacks .titulo-cliente{
+    font-size: 35px;
+    color: #fff;
+    padding: 15px;
+}
+
+.feedbacks .cards-feedbacks .card-feedback .img-clientes{
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+}
+
+.feedbacks .cards-feedbacks .card-feedback .img-clientes:hover{
+    transform: scale(1.1);
+}
+
+.feedbacks .cards-feedbacks .card-feedback .nome-cliente{
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 25px;
+}
+
+.feedbacks .cards-feedbacks .card-feedback .texto-cliente{
+    text-align: justify;
+    min-height: 160px;
+    overflow-y: auto;
+    padding-right: 18px;
+    color: #fff;
+}
+
+.feedbacks .cards-feedbacks .card-feedback .estrela-cliente{
+    width: 130px;
+    margin-top: 20px;
+}
+
+/* Feedbacks */
+
+/* Input */
+
+.input{
+    background-color: #525B2C;
+}
+
+.input .conteudo-input{
+    padding: 100px;
+}
+
+.input .conteudo-input .titulo-form{
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 20px;
+    
+}
+
+.input .conteudo-input .form{
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.input .conteudo-input .text-form{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Input */
+
+/* Soluções */
+
+.solucoes{
+    background-color:#A2B14D;
+}
+
+.solucoes .conteudo-solucoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:160px;
+    padding: 80px;
+}
+
+.solucoes .conteudo-solucoes .solucao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.solucoes .conteudo-solucoes .titulo-solucoes{
+    font-weight: 500;
+}
+
+.solucoes .conteudo-solucoes .icone-solucoes{
+    width: 50px;
+    transition: transform 0.5s;
+}
+
+.solucoes .conteudo-solucoes .icone-solucoes:hover{
+    transform: scale(1.3);
+}
+
+/* Soluções */
+
+/* Contato */
+
+.ajuda{
+    background-color: #f2f2f2;
+}
+
+.ajuda .conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 100px;
+}
+
+.ajuda .conteudo .map{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ajuda .conteudo .container-form{
+    width: 55%;
+    background-color: #A2B14D;
+    border-radius: 14px;
+    margin: 14px;
+    box-sizing: 0 3px 5px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.ajuda .container-form .titulo{
+    background: linear-gradient(120deg, #A2B14D 0%, #525B2C 100%);
+    padding: 24px;
+    text-align: center;
+    color: #fff;
+}
+
+.ajuda .conteudo .form{
+    padding: 18px;
+}
+
+.ajuda .conteudo .campo-form{
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
+}
+
+.ajuda .conteudo .campo-form label{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.ajuda .conteudo .campo-form input{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #dfdfdf;
+    padding: 8px;
+}
+
+.ajuda .conteudo .campo-form a{
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    visibility: hidden;
+}
+
+.ajuda .conteudo button{
+    background-color: #525B2C;
+    color: #fff;
+    width: 100%;
+    border-radius: 14px;
+    padding: 10px;
+    border: 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.ajuda .conteudo .campo-form.error input{
+    border-color: #ff3b25; 
+}
+
+.ajuda .conteudo .campo-form.error a{
+    color: #ff3b25;
+    visibility: visible;
+}
+
+/* Contato */
+
+/* Rodapé */
+
+.rodape{
+    padding: 80px 0 20px 0;
+    background-color: #525B2C;
+}
+
+.rodape .navegacao{
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.rodape .redes-sociais{
+    display: flex;
+}
+
+.rodape .redes-sociais a{
+    display: flex;
+    justify-content: center;
+    margin:  0 10px;
+    font-size: 30px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    padding: 15px;
+    width: 65px;
+    transition: 0.4s ease-in-out;
+    background-color: #fff;
+}
+
+.rodape .redes-sociais a:hover{
+    transform: scale(1.1);
+}
+
+.rodape .copyright{
+    margin-top: 47px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Rodapé */
